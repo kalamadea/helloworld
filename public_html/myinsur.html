@@ -1,0 +1,100 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ингосстрах - мои страховки</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var insur_loader = (function() {
+                return {
+                    params: {
+                        id: "test_iframe_id",
+                        container: ".myinsur",
+                        product: 'my',
+                        params: {
+                            source: "pb",
+                            appId: " ",
+                            lang: "ru"
+                        },
+                        style: {
+                            width: "100%",
+                            border: "none"
+                        }
+                    },
+                    load: function(a) {
+                        var b = document.createElement('script');
+                        b.src = a;
+                        b.type = 'text/javascript';
+                        document.getElementsByTagName('head')[0].appendChild(b);
+                    }, init: function() {
+                        insur_loader.load('js/InsureFrameMaker.js');
+                    }
+                };
+            }());
+            insur_loader.init();
+        </script>
+    </head>
+    <body>
+        <header class="nav">
+            <div class="container">
+                <ul class="nav pull-left">
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="main.html">Логотип</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li>0 (800) 500 801</li>
+                    <li><a href="insurevents.html">Страховой случай</a></li>
+                    <li><a href="myinsur.html">Мои страховки</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="jumbotron">
+            <div class='container'>
+                <h2>Выбери свою мерe защиты</h2>
+            </div>
+        </div>
+        
+        <div class='container'>
+            <div class='myinsur'></div>
+        </div>
+        
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>&COPY; 2015 ЧАО СК "ИНГОССТРАХ"</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Информационный центр</h3>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Вопрос-ответ</a></li>
+                            <li><a href="#">Нормативные документы</a></li>
+                            <li><a href="#">Wiki</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Страховые продукты</h3>
+                        <ul>
+                            <li><a href="#">Здоровье</a></li>
+                            <li><a href="#">Имущество</a></li>
+                            <li><a href="#">Потеря работы</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Вопросы? Звоните!</h3>
+                        <p>0 (800) 500 801</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

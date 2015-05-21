@@ -1,0 +1,79 @@
+/* 
+    Document   : main
+    Created on : 18.05.2015, 14:27:14
+    Author     : zp050883aav
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    font-size:16px;
+}
+
+header {
+    position:fixed;
+    background-color:#fff;
+    width:100%;
+    z-index:1000;
+}
+
+header .nav li{
+    display:inline-block;
+}
+
+.jumbotron{
+    height:500px;
+    background-image: url('../images/insurance2.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.jumbotron .container {
+    text-align:center;
+    color:white;
+    vertical-align: middle;
+}
+
+.company-features{
+    display:block;
+    border:2px dotted green;
+}
+.company-features li{
+    display:inline-block;
+    border:1px dotted blue;
+    width:24%;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+#footer{
+    background: whitesmoke;}
+#footer h3 {
+    color:grey;
+}
+#footer ul{
+    display:block;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.product-menu {
+
+}
+
+.product-icon-folder {
+    display:block;
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:50%;
+}
+.product-icon-folder li{
+    display:inline-block;
+}
+
+.myinsur {
+
+}.events {
+
+}
