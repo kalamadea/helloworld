@@ -13,19 +13,30 @@ and open the template in the editor.
     </head>
     <body>
         <header class="nav">
-            <div class="container">
-                <ul class="nav pull-left">
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="main.html">
-                            Логотип
-                        </a></li>
-                </ul>
-                <ul class="nav pull-right">
-                    <li>0 (800) 500 801</li>
-                    <li><a href="insurevents.html">Страховой случай</a></li>
-                    <li><a href="myinsur.html">Мои страховки</a></li>
-                </ul>
-            </div>
+            <ul class="nav pull-left">                    
+                <li id='quick-main-menu-button'><a href="#">Меню</a>
+                    <ul id="quick-main-menu">
+                        <li><a href='#'>Главная страница</a></li>
+                        <li><a href='#'>Здоровье</a></li>
+                        <li><a href='#'>Имущество</a></li>
+                        <li><a href='#'>Застрахованный кредитный лимит</a></li>
+                        <li><a href='#'>Страховой случай</a></li>
+                        <li><a href='#'>Мои страховки</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="main.html">
+                        <div class="logo_wrapper">
+                            <img src="ingos.png" alt=""/>
+                        </div>
+                        Логотип
+                    </a></li>
+            </ul>
+            <ul class="nav pull-right">
+                <li>0 (800) 500 801</li>
+                <li><a href="insurevents.html">Страховой случай</a></li>
+                <li><a href="myinsur.html">Мои страховки</a></li>
+            </ul>
         </header>
         
         <div class="jumbotron">
@@ -46,26 +57,26 @@ and open the template in the editor.
         
         <div class='container'>
             <div class="row">
-                <div class="col-md-3"><h3>Надежность</h3></div>
-                <div class="col-md-3"><h3>Технологичность</h3></div>
-                <div class="col-md-3"><h3>Скорость и комфорт</h3></div>
-                <div class="col-md-3"><h3>Персональное обслуживание</h3></div>
+                <div class="col-sm-3"><h3>Надежность</h3></div>
+                <div class="col-sm-3"><h3>Технологичность</h3></div>
+                <div class="col-sm-3"><h3>Скорость и комфорт</h3></div>
+                <div class="col-sm-3"><h3>Персональное обслуживание</h3></div>
             </div>
             <div class="row">
-                <div class='col-md-3'>
+                <div class='col-sm-3'>
                     <p>Компания 10 лет работает на страховом рынке Украины.</p>
                     <p>Генеральный финансовый партнер – ПриватБанк.</p>
                 </div>
-                <div class='col-md-3'>
+                <div class='col-sm-3'>
                      <p>On-line оформление за 5 минут и без лишних бумаг.</p>
                      <p>Удобное управление своими страховками на сайте.</p>
                 </div>
-                <div class='col-md-3'>
+                <div class='col-sm-3'>
                     <p>On-line заявка о страховом событии.</p>
                     <p>Минимум документов.</p>
                     <p>98% выплат в течение 1 дня!</p>
                 </div>
-                <div class='col-md-3'>
+                <div class='col-sm-3'>
                     <p>При обращении за страховой выплатой каждый клиент получает прямой контакт по мобильному телефону с менеджером компании.</p>
                 </div>
             </div>
@@ -78,26 +89,46 @@ and open the template in the editor.
                 <h2>Страховые продукты</h2>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src='images/product/NS.png'>
+                        <img src='images/product/NS_a.png'>
                         <h3>Защита на каждый день</h3>
-                        <p>Страхование от несчастного случая</p>
-                        <p><a href="#" class="btn btn-success" role="button">Оформить</a>
+                        <p>Застрахуйте себя и своих близких от несчастных случаев<br>
+                        Вы можете получить финансовую посмощь на восстановление здоровья в случае травмы,
+                        ожога, отравления и других расстройств здоровья.</p>
+                        <ul>
+                            <li>Страховое покрытие - до 125 000 грн.</li>
+                            <li>Ежемесячный платеж - от 10 грн.</li>
+                            <li>Зона действия - весь мир</li>
+                        </ul>
+                        <p><a href="#" class="btn btn-info" role="button">Перейти</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src='images/product/NB.png'>
+                        <img src='images/product/NB_a.png'>
                         <h3>Недвижимость без осмотра</h3>
-                        <p>Страхование от несчастного случая</p>
+                        <p>Финансовая помощь на восстановление имущества, пострадавшего в результате пожара, взрыва, 
+                            затопления, стихийного явления, аварии коммунальных служб.<br>
+                        Для оформления договора осмотр недвижимости не требуется</p>
+                        <ul>
+                            <li>Страховое покрытие - до 125 000 грн.</li>
+                            <li>Ежемесячный платеж - от 10 грн.</li>
+                        </ul>
+                        <p><a href="#" class="btn btn-toolbar" role="button">Подробнее</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src='images/product/ZK.png'>
+                        <img src='images/product/ZK_a.png'>
                         <h3>Застрахованный кредитный лимит</h3>
                         <p>Страхование от несчастного случая</p>
+                        <ul>
+                            <li>Страховое покрытие - до 125 000 грн.</li>
+                            <li>Ежемесячный платеж - от 10 грн.</li>
+                            <li>Зона действия - весь мир</li>
+                        </ul>
+                        <p><a href="#" class="btn btn-success" role="button">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -109,14 +140,26 @@ and open the template in the editor.
             </div>
         </div>
         
-        <div id="footer">
+       <div id="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3>&COPY; 2015 ЧАО СК "ИНГОССТРАХ"</h3>
-                    </div>
-                    <div class="col-md-3">
+                
+                <div class='row'>
+                    <div class="col-sm-4">
+                        <h3>Вопросы? Звоните!</h3>
+                    </div> 
+                    <div class='col-sm-4'>
                         <h3>Информационный центр</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Страховые продукты</h3>
+                    </div>                      
+                </div>
+                
+                <div class="row">
+                    <div class='col-sm-4'>
+                        <h2>0 (800) 500 801</h2>
+                    </div>
+                    <div class="col-sm-4">                       
                         <ul>
                             <li><a href="#">О компании</a></li>
                             <li><a href="#">Вопрос-ответ</a></li>
@@ -124,21 +167,19 @@ and open the template in the editor.
                             <li><a href="#">Wiki</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <h3>Страховые продукты</h3>
+                    <div class="col-sm-4">
                         <ul>
                             <li><a href="#">Здоровье</a></li>
                             <li><a href="#">Имущество</a></li>
                             <li><a href="#">Потеря работы</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <h3>Вопросы? Звоните!</h3>
-                        <p>0 (800) 500 801</p>
-                    </div>
                 </div>
+                <p>&COPY; 2015 ЧАО СК "ИНГОССТРАХ"</p>
             </div>
         </div>
-        
+      
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

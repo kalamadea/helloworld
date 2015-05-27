@@ -17,8 +17,59 @@ header {
     z-index:1000;
 }
 
-header .nav li{
+header .nav>li{
     display:inline-block;
+}
+
+#quick-main-menu {
+    padding:0;
+    margin:0;
+    background-color:white;
+    z-index:1000;
+    list-style:none;
+    position:absolute;
+    width:200px;
+    display:none;
+}
+
+header .nav li:hover #quick-main-menu{
+    display:block;
+    animation: move-from-left 500ms ease-in-out;
+    -webkit-animation: move-from-left 500ms ease-in-out;
+}
+
+@keyframes move-from-left{
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px);}
+}
+
+@-webkit-keyframes move-from-left{
+    from {
+        transform: translateX(-200px);
+        -webkit-transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);}
+}
+
+#quick-main-menu a{
+    display:block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid grey;
+}
+
+.logo_wrapper {
+    position:relative;
+}
+
+.logo_wrapper img {
+    position:absolute;
+    width:100%;
 }
 
 .jumbotron{
@@ -76,4 +127,16 @@ header .nav li{
 
 }.events {
 
+}
+
+.product-menu img {
+    -webkit-filter:grayscale(100%);
+}
+
+.product-menu img:hover {
+    -webkit-filter:none;
+}
+
+.product-menu p:last-child{
+    text-align: right;
 }
